@@ -22,7 +22,7 @@ const FormField = ({labelName,type,name,placeholder,value,handelChange ,isSupris
         value={value}
         onChange={handelChange}
         required
-        className='bg-grey-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4649ff] focus:border-[#4649ff] outline-none block w-full p-3 '/>
+        className='bg-lighter border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4649ff] focus:border-[#4649ff] outline-none block w-full p-3 '/>
     </div>
   )
 }

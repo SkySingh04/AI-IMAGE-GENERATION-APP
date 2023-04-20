@@ -7,6 +7,13 @@ module.exports = {
       screens: {
         xs: '480px',
       },
+      colors: {
+        'darker': '#424874',
+        "cold" : "#A6B1E1",
+        "purple" : "#DCD6F7",
+        "lighter" : "#F4EEFF",
+        "ocean" : "#088395"
+      },
       fontFamily: {
         inter: ['Inter var', 'sans-serif'],
       },
