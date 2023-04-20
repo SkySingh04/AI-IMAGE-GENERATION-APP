@@ -43,8 +43,36 @@ const generateImage = async ()=>{
 
 }
 
-const handelSubmit = ()=>{
+const handelSubmit = async(e)=>{
+  e.preventDefault()
 
+  if(form.prompt && form.photo){
+    setLoading(true)
+
+    try {
+      const response = await fetch("http://localhost:8080/api/v1/post",
+      {
+        method : "POST",
+        headers : {
+          "Content-Type" : "application/json"
+        },
+        body : JSON.stringify(form)
+        
+      })
+      await response.json()
+      navigate("/")
+      
+    } catch (error) {
+      alert(error)
+    }finally{
+      setLoading(false)
+    }
+
+  }
+  else{
+      alert("Please Enter A Prompt")
+
+  }
 
 }
 
@@ -80,7 +108,7 @@ const handelSupriseMe=()=>{
           <FormField
             labelName="Prompt"
             type="text"
-            name="Promt"
+            name="prompt"
             placeholder="a bowl of soup that looks like a monster, knitted out of wool"
             value={form.prompt}
             handelChange={handelChange}
