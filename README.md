@@ -1,10 +1,15 @@
 # AI-IMAGE-GENERATION-APP
 
-##To use the website you need to have:
+## To use the website you need to have:
+
 -MONGODB_URL=""
+
 -OPENAI_API_KEY=""
+
 -CLOUDINARY_CLOUD_NAME=""
+
 -CLOUDINARY_API_KEY=""
+
 -CLOUDINARY_API_SECRET=""
 
 Step 1: Add the following secrets to a .env file in the server folder
