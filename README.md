@@ -18,7 +18,7 @@ Step 2: To run the backend, use the following commands in the terminal
 ```
 cd server
 npm run start
-'''
+```
 
 Step 3: To run the frontend, use the following commands in a new terminal session
 ```
